@@ -1,0 +1,77 @@
+<section>
+    <div class="portfolio mb-4">
+        <p class="text-center port mt-5">portfolio component</p>
+        <div class="icon text-center mb-5">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port1.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port1.png" alt="port1">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port2.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port2.png" alt="port2">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port3.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port3.png" alt="port3">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port1.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port1.png" alt="port1">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port2.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port2.png" alt="port2">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="img" (click)="openImage('port3.png')">
+                            <div class="layer d-flex justify-content-center align-items-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus text-white"></i>
+                                </div>
+                            </div>
+                            <img src="port3.png" alt="port3">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="showOverlay" (click)="close()" id="parent" class="d-flex justify-content-center align-items-center vh-100">
+        <div class="cover text-center">
+          <img [src]="selectedImage" class="w-75" alt="">
+        </div>
+      </div>
+</section>

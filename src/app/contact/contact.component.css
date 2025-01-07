@@ -1,0 +1,92 @@
+section{
+    padding: 100px 0px 0px 0px;
+}
+.port{
+    color: rgb(44,62,80);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: relative;
+}
+.icon::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(44,62,80);
+    width: 6%;
+    height: 4px;
+    top: 30%;
+    right: 42%;
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(44,62,80);
+    width: 6%;
+    height: 4px;
+    top: 30%;
+    right: 52%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+form input {
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%;
+    background: transparent;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+label {
+    position: absolute;
+    left: 5px;
+    color: #1ABC9C;
+    transition: all 0.4s ease;
+    opacity: 0; 
+}
+
+input#username:not(:placeholder-shown) + label[for="username"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userAge:not(:placeholder-shown) + label[for="userAge"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userEmail:not(:placeholder-shown) + label[for="userEmail"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userPassword:not(:placeholder-shown) + label[for="userPassword"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 2px solid #1ABC9C;
+}
+   button{
+    width: fit-content;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+   }
